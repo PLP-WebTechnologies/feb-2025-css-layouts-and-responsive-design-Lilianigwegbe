@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef's Corner - Kitchen Equipment</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #fffdf8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e2e2e;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h1 {
+      font-size: 1.8rem;
+      color: #ffc107;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    section {
+      background: #f8f8f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    section:hover {
+      transform: scale(1.02);
+    }
+
+    section h2 {
+      color: #ff5722;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2e2e2e;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Chef's Corner</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Top-Selling Blenders</h2>
+      <p>Explore our collection of high-performance blenders ideal for smoothies, sauces, and soups.</p>
+      <a href="#" class="button">Shop Blenders</a>
+    </section>
+    <section>
+      <h2>Premium Cookware Sets</h2>
+      <p>Non-stick, stainless steel, and ceramic cookware sets trusted by home and pro chefs alike.</p>
+      <a href="#" class="button">Shop Cookware</a>
+    </section>
+    <section>
+      <h2>Smart Kitchen Gadgets</h2>
+      <p>Upgrade your cooking with digital scales, electric can openers, and precision thermometers.</p>
+      <a href="#" class="button">Shop Gadgets</a>
+    </section>
+    <section>
+      <h2>Weekly Deals</h2>
+      <p>Don't miss out on our limited-time discounts on mixers, ovens, and more.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chef's Corner | Your Kitchen, Upgraded</p>
+  </footer>
+
+</body>
+</html>
